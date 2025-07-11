@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architectural Studio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .hero {
+      background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg');
+      height: 90vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 60px 40px;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #1f1f1f;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>MB Architectural studio</h1>
+  </div>
+
+  <div class="section">
+    <h2>Our Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Modern Villa" />
+      </div>
+      <div class="project-card">
+        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Glass Building" />
+      </div>
+      <div class="project-card">
+        <img src="https://cdn.pixabay.com/photo/2017/07/09/03/19/home-2486092_1280.jpg" alt="Futuristic Design" />
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>About Us</h2>
+    <div class="about" style="float: left;margin-left: 20vh;height: 60vh; width: 40%; padding: 10vh;">
+      We are a creative architecture studio that designs modern, elegant, and sustainable spaces. Our focus is on blending beauty with functionality to create structures that inspire and endure.
+     </div>
+    <div style="float: left;height: 20vh;width: 30%; margin-left: 20vh;">
+     <img src="https://cdn.pixabay.com/photo/2022/11/22/10/37/house-7609267_1280.jpg" height="300vh" style="border-radius: 20vh;" alt="">
+    </div>
+
+
+
+
+    
+   
+  </div>
+
+
+
+
+  <footer style="float: left; margin-top: 0vh; background-color: aliceblue;width: 100%; padding-right: 20vh;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1000px; margin: auto; padding: 20px 0;">
+    <div style="flex: 1; min-width: 200px; margin: 10px;">
+      <h3>Contact</h3>
+      <p>Email: info@architecture.com</p>
+      <p>Phone: +91 9xxxxxxxxx</p>
+      <p>Location: Deoband, India</p>
+    </div>
+    <div style="flex: 1; min-width: 200px; margin: 10px;">
+      <h3>Quick Links</h3>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">Home</a></p>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">Projects</a></p>
+      <p><a href="#" style="color: #ccc; text-decoration: none;">About</a></p>
+    </div>
+    <div style="flex: 1; min-width: 200px; margin: 10px;">
+      <h3>Follow Us</h3>
+      <p>
+        <a href="#" style="color: #ccc;">Facebook</a> | 
+        <a href="#" style="color: #ccc;">Instagram</a> | 
+        <a href="#" style="color: #ccc;">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+  
+  <div style=" padding-top: 10px; font-size: 0.85rem;">
+    <center>
+    &copy; 2025 Modern Architectural Studio. All rights reserved. | Designed by Ansh Digital Marketing
+</center>  
+</div>
+</footer>
+
+</body>
+</html>
